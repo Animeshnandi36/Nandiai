@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f1724;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  width: 95%;
+  max-width: 400px;
+  height: 90vh;
+  background: #1e293b;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #7c3aed;
+  margin: 15px 0;
+}
+
+#chat-box {
+  flex: 1;
+  padding: 15px;
+  background: #0b1220;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  background: #1e293b;
+  border-top: 1px solid #333;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 25px 0 0 25px;
+  border: none;
+  outline: none;
+}
+
+#send-btn {
+  padding: 0 20px;
+  border-radius: 0 25px 25px 0;
+  border: none;
+  background: #7c3aed;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bubble {
+  max-width: 80%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.user-bubble {
+  background: #7c3aed;
+  color: #fff;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+.nandiai-bubble {
+  background: #2c3345;
+  color: #fff;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
